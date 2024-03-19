@@ -1,0 +1,43 @@
+.bg {
+    background-image: url('images/background.jpg');
+
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -10;
+    &:before {
+        content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right, #000000, #313131);
+            opacity: .7;
+            pointer-events: none;
+            z-index: -5;
+        }
+}
+.mb ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffa9a9;
+}
+.mb li {
+    float: left;
+}
+.mb li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.mb li a:hover {
+    background-color: #ff0000;
+}
