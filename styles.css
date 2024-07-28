@@ -1,9 +1,45 @@
-html {
-    background-image: url('images/background_temp.png');
-    
-        height: 100%;
-    
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.content {
+    width:fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.content:before {
+    content: "";
+    position: absolute;
+    background: rgb(40, 39, 46);
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
 }
